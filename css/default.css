@@ -1,0 +1,150 @@
+.container{
+    border: 3px solid salmon;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+
+.box{
+    padding: 30px;
+    font-size: 35px;
+    border: 2px solid rebeccapurple;
+    text-align: center;
+    color: white;
+}
+
+.box1{
+    background-color: blueviolet;
+}
+.box2{
+    background-color: yellow;
+}
+.box3{
+    background-color: royalblue;
+}
+.box4{
+    background-color: yellowgreen;;
+}
+.box5{
+    background-color: purple;
+}
+.generic1,.generic2,.generic3{
+    background: red;
+}
+
+.container1{
+    border: 3px solid salmon;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    background: url(../images/avatar1.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.header-cls,.header-p{
+    color: white;
+    text-align: center;
+}
+
+.filter{
+    background: blueviolet;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2{
+    border: 3px solid salmon;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container3{
+    border: 3px solid salmon;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+@media screen and (min-width:776px){
+    .container3{
+        flex-direction: column;
+    }
+    .container3 .box1{
+        order: 1;
+    }
+    
+    .container3 .box2{
+        order: 2;
+    }
+    
+    .container3 .box3{
+        order: 0;
+    }
+    
+}
+
+
+.container4{
+    border: 3px solid salmon;
+    display: flex;
+    flex-wrap: wrap;
+  height: 500px;
+  align-items: flex-start;
+}
+
+.container4 .box2{
+align-self: center;
+}
+
+.container4 .box3{
+    align-self: flex-end;
+    }
+
+    .container5,.container6,.container7,.container8{
+        border: 3px solid salmon;
+    display: flex;
+    flex-wrap: wrap;
+ 
+  align-items: flex-start;
+    }
+
+
+    .container5 .box{
+        flex-grow: 1;
+    }
+
+    .container6 .box2{
+        flex-grow: 1;
+    }
+
+    .container7 .box1{
+        flex-shrink: 0;
+        width: 300px;
+    }
+
+    .container8 .box{
+        flex-grow: 1;
+        flex-basis: 150px;
+    }
