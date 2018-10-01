@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  padding: 12px 8px;
+  background-color: blueviolet;
+  color: white; 
+  display: block;
+  text-align: center;
+}
+
+a:hover{
+   background-color: lightblue;
+}
+
+
+@media screen and (min-width:547px){
+    ul{
+        display:flex;
+        flex-wrap: wrap;
+        border-top: 2px solid yellow;
+    }
+
+    li{
+        flex: 1 0 auto;
+    }
+
+    .first{
+        background-color: yellow;
+    }
+}
