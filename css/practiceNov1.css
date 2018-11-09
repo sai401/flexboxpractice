@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    border: 3px solid red;
+    height: 300px;
+
+    /* flex-direction: column-reverse, column, row-reverse, row(default),  */
+    flex-direction: row;
+
+    /* flex-wrap:wrap-reverse, wrap, nowrap; */
+    flex-wrap: wrap;
+
+    /* justify-content: flex-start, flex-end, center, space-around, space-between; */
+    justify-content: center;
+
+    /* align-items: flex-start, flex-end, center, baseline */
+    align-items: center;
+}
+
+.box{
+    text-align: center;
+    padding: 30px;
+    font-size: 32px;
+    color: white;
+}
+
+.box1{
+    background-color: brown;
+}
+.box2{
+    background-color: green;
+}
+.box3{
+    background-color: blue;
+    font-size: 70px;
+}
+.box4{
+    background-color: yellow;
+}
+.box5{
+    background-color: orange;
+}
+.generic{
+    background-color: darkgreen;
+}
+
+.banner-container{
+    height:75vh;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/big-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.center{
+    color: white;
+}
+
+.center h1{
+    text-align: center;
+}
+
+.banner2-container{
+    height:69vh;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/man.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
